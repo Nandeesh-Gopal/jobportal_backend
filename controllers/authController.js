@@ -2,7 +2,6 @@ import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import generateToken from "../utils/generateToken.js";
 
-/* REGISTER */
 export const registerUser = async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -30,7 +29,6 @@ export const registerUser = async (req, res) => {
 
 };
 
-/* LOGIN */
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
